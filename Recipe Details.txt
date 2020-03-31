@@ -1,0 +1,20 @@
+API Key - a76b4011bc70d23cdcd00b14138de0a4
+APP ID - d72551cb
+
+Old API Key - c8daa8a855225d925157f8c7e093a014
+Old APP ID - 0f21d949
+
+flutter pub run flutter_launcher_icons:main
+
+keytool -genkey -v -keystore recipes-book.jks -alias recipesbook -keyalg RSA -keysize 2048 -validity 10000
+
+splits {
+	abi {
+		enable true
+		reset()
+		include 'armeabi-v7a', 'arm64-v8a'
+		universalApk true
+	}
+}
+
+flutter build apk --split-per-abi
