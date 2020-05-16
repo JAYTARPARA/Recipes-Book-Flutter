@@ -6,7 +6,11 @@ Old APP ID - 0f21d949
 
 flutter pub run flutter_launcher_icons:main
 
+flutter pub pub run flutter_native_splash:create
+
 keytool -genkey -v -keystore recipes-book.jks -alias recipesbook -keyalg RSA -keysize 2048 -validity 10000
+
+keytool -genkey -v -keystore recipes-book-new.jks -alias recipesbooknew -keyalg RSA -keysize 2048 -validity 10000
 
 splits {
 	abi {
